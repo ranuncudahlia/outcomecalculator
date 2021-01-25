@@ -1,0 +1,124 @@
+body {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+
+.contents {
+ width: 55%;
+ background-color: rgba(255,255,255,0.8);
+ margin: -10px auto 0 auto;
+ padding: 5px;
+ color: #777;
+}
+
+.topContents {
+  width: 650px;
+  height: 150px;
+  margin: 10px auto 0px auto;
+  overflow: hidden;
+}
+
+.textInput {
+  margin: 2px;
+  text-align: left;
+  width: 90%;
+  height: 150px;
+}
+
+#mutationSelect {
+  width: 50%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+.buttonContents {
+}
+
+.checkButton {
+  background-color: #1b2f4f;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 208px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.checkButton:active {
+  background-color: #071833;
+}
+  
+
+.botContents {
+  position: relative;
+  width: 640px;
+  height: 520px;
+  margin: 20px auto 0 auto;
+}
+
+.displayImage {
+  position: relative;
+  width: 640px;
+  height: 520px;
+  margin: 20px auto 0 auto;
+  overflow: hidden;
+}
+
+.displayImage img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 640px;
+  max-height: 500px;
+}
+
+
+#popup {
+    width: 300px;
+    padding: 8px;
+    position: fixed;
+    top: 30px;
+    cursor: pointer;
+    left: 30px;
+    background-color: rgba(55, 74, 67, 0.8);
+    color: #b0bfba;
+    border-radius: 10px;
+    font-family: "Open Sans";
+}
+
+.credits {
+    width: 173px;
+    padding: 10px;
+    position: fixed;
+    bottom: 15px;
+    cursor: pointer;
+    right: 35px;
+    background-color: rgba(255, 255, 255, 0.35);
+    color: #fff;
+    border-radius: 10px;
+    font-family: "Open Sans";
+    font-size: 10px;
+    text-align: right;
+}
+
+#copyright {
+  position: fixed;
+  bottom: 17px;
+  right: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+a, a:visited, a:active {
+  color: #000;
+}
+
+a:hover {
+  color: #fff;
+}

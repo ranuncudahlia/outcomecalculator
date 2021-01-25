@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <title>Wolvden Mutation Checker</title>
+    </head>
+    <body>
+        <div class="contents">
+            <div class="topcontents">
+                <center>
+                <textarea id="importText" placeholder="Input Base64 or URL here..." cols="50" rows="6"></textarea>
+                </center>
+                <div class="mutationSelect">
+                    <center>
+                    <p>Melanism <input type="checkbox" id="melaCheck"> Albinism <input type="checkbox" id="albinoCheck"></p>
+                    </center>
+                </div>
+            </div>
+            <div class="buttonContents">
+                <center>
+                <button class="checkButton" onclick="mutationCheck()">Check Result</button>
+                <button class="checkButton" onclick="toggleFunction()">Toggle Image</button>
+                </center>
+            </div>
+            <div class="botContents">
+                <div class="displayImage">
+                    <img id="offspringBase" src="default.png">
+                    <img id="offspringImport" src="">
+                    <img src="newoverlay.png">
+                </div>
+            </div>
+            <div id="popup" onclick="popFunction()">
+                <center>Instructions:</center>
+                <br />1. Copy & Paste the URL of the scry result you would like to check. You can use right-click "copy image link" for this. Alternatively, host it on a website such as imgur, then copy-paste the link.
+                <br />2. Select which mutation you would like to check for, Albino or Melanism.
+                <br />3. Click "check result" to load your image.
+                <br />4. Click "toggle image" to check the base image. If it seems like nothing happens, your offspring has the mutation. Otherwise, you will be able to see the differences.
+                <center><p><i>Click me to make me go away.</i></p></center>
+            </div>
+            <div id="copyright">
+                ©
+            </div>
+            <div class="credits">
+                <p>By Kendall Churchil | <b><a href="https://www.wolvden.com/profile/1639">ranuncudahlia#1639</a></b></p>
+                <p>Background by <b><a href="https://ocellifera.com/">Koby Hughes</a></b> | <b><a href="https://twitter.com/ocellifera">@ocellifera</a></b></p>
+                <p>Puppy bases (empty, Melanistic, and Albinistic) by <b><a href="https://www.wolvden.com/">Wolvden</a></b></p>
+            </div>
+            <script>
+                function popFunction() {
+                    var x = document.getElementById('popup');
+                    if (x.style.display === 'none') {
+                        x.style.display = 'inline-block';
+                    } else {
+                        x.style.display = 'none';
+                    }
+                }
+        </script>
+            <script>
+                function toggleFunction() {
+                  var x = document.getElementById("offspringImport");
+                  if (x.style.display === "none") {
+                    x.style.display = "block";
+                  } else {
+                    x.style.display = "none";
+                  }
+                }
+            </script>
+            <script src="overlay.js" type="text/javascript"></script> 
+        </div>
+    </body>
+</html>
